@@ -1,0 +1,45 @@
+---
+- hosts: all
+  become: no
+  vars:
+    USER: master
+    ZPLUG_HOME: '~/.zplug'
+    ZSH_HOME: ~/.zsh
+  pre_tasks:
+    - name: Check Updates
+      become: yes
+      changed_when: false
+      ansible.builtin.apt:
+        update_cache: true
+  tasks:
+    - name: Install zsh
+      become: yes
+      ansible.builtin.package:
+        name:
+          - zsh
+          - curl
+          - git
+
+    - name: Change default shell
+      ansible.builtin.command: usermod --shell /bin/zsh {{ USER }}
+      become: true
+      changed_when: false
+
+    - name: Install micro
+      changed_when: false
+      ansible.builtin.shell: curl https://getmic.ro | bash
+
+    - name: Install Oh-my-posh
+      become: yes
+      changed_when: false
+      ansible.builtin.shell: curl -s -k https://ohmyposh.dev/install.sh | bash -s
+
+    - name: Clone zplug
+      ansible.builtin.git:
+        repo: 'https://github.com/zplug/zplug'
+        dest: '{{ ZPLUG_HOME }}'
+
+    - name: Copy zsh configurations
+      ansible.builtin.template:
+        src: ./configs/zshrc.j2
+        dest: '~/.zshrc'

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: webserver
+
+spec:
+  containers:
+  - name: webserver
+    image: nginx
+
+  - name: busybox
+    image: busybox
+    

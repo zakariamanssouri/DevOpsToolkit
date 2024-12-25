@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend-rs
+
+spec:
+  template:
+    metadata:
+      name: frontend
+      labels:
+        app: payment-app
+  selector:
+        

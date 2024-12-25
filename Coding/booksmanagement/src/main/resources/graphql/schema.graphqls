@@ -1,0 +1,45 @@
+type Query {
+    booksList : [Book]
+}
+
+type Mutation {
+    saveBook(book: BookRequest): Book
+}
+
+
+type Book {
+    id: ID
+    title: String
+    publisher: String
+    isbn: String
+    author: Author
+    Genre: Genre
+}
+
+type Author {
+    id: ID
+    name: String
+    surname: String
+}
+
+type Genre {
+    id: ID
+    name: String
+}
+
+input BookRequest {
+    title: String
+    publisher: String
+    isbn: String
+    author: AuthorRequest
+    Genre: GenreRequest
+}
+
+input AuthorRequest {
+    name: String
+    surname: String
+}
+
+input GenreRequest {
+    name: String
+}

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: memory-hog
+spec:
+  replicas: 70
+  selector:
+    matchLabels:
+      app: memory-hog
+  template:
+    metadata:
+      labels:
+        app: memory-hog
+    spec:
+      containers:
+      - name: memory-hog-container
+        image: busybox
+        command: ["sh", "-c", "while true; do sleep 3600; done"]
+        resources:
+          requests:
+            memory: "1500Mi"
+          limits:
+            memory: "1500Mi"

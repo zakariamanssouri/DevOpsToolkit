@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-tolerations
+  labels:
+    name: test-tolerations
+spec:
+  tolerations:
+    - key: type
+      operator: "Equal"
+      value: "linux"
+      effect: "NoSchedule"
+  nodeName: k8s-labs-m02
+  containers:
+  - name: test-tolerations
+    image: nginx:1.14.2
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
+  

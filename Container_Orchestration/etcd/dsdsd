@@ -1,0 +1,451 @@
+[m[33metcd-1-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.457098Z","caller":"embed/config.go:679","msg":"Running http and grpc server on single port. This is not recommended for 
+[mproduction."}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.457147Z","caller":"etcdmain/etcd.go:73","msg":"Running: ","args":["/usr/local/bin/etcd","--name=etcd-1","--initial-adver
+[mtise-peer-urls=http://etcd-1:2380","--listen-peer-urls=http://0.0.0.0:2380","--listen-client-urls=http://0.0.0.0:2379","--advertise-client-urls=http://etcd-1:2379","--heartbe
+[mat-interval=250","--election-timeout=1250","--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380","--initial-cluster-state=new","--
+[minitial-cluster-token=mys3cr3ttok3n"]}
+[m[33metcd-1-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.457157Z","caller":"etcdmain/etcd.go:105","msg":"'data-dir' was empty; using default","data-dir":"etcd-1.etcd"}
+[m[33metcd-1-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.457167Z","caller":"embed/config.go:679","msg":"Running http and grpc server on single port. This is not recommended for 
+[mproduction."}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.457174Z","caller":"embed/etcd.go:127","msg":"configuring peer listeners","listen-peer-urls":["http://0.0.0.0:2380"]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.457268Z","caller":"embed/etcd.go:135","msg":"configuring client listeners","listen-client-urls":["http://0.0.0.0:2379"]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.457302Z","caller":"embed/etcd.go:308","msg":"starting an etcd server","etcd-version":"3.5.13","git-sha":"c9063a0dc","go-
+[mversion":"go1.21.8","go-os":"linux","go-arch":"amd64","max-cpu-set":12,"max-cpu-available":12,"member-initialized":false,"name":"etcd-1","data-dir":"etcd-1.etcd","wal-dir":""
+[m,"wal-dir-dedicated":"","member-dir":"etcd-1.etcd/member","force-new-cluster":false,"heartbeat-interval":"250ms","election-timeout":"1.25s","initial-election-tick-advance":tr
+[mue,"snapshot-count":100000,"max-wals":5,"max-snapshots":5,"snapshot-catchup-entries":5000,"initial-advertise-peer-urls":["http://etcd-1:2380"],"listen-peer-urls":["http://0.0
+[m.0.0:2380"],"advertise-client-urls":["http://etcd-1:2379"],"listen-client-urls":["http://0.0.0.0:2379"],"listen-metrics-urls":[],"cors":["*"],"host-whitelist":["*"],"initial-
+[mcluster":"etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380","initial-cluster-state":"new","initial-cluster-token":"mys3cr3ttok3n","quota-backend-
+[mbytes":2147483648,"max-request-bytes":1572864,"max-concurrent-streams":4294967295,"pre-vote":true,"initial-corrupt-check":false,"corrupt-check-time-interval":"0s","compact-ch
+[meck-time-enabled":false,"compact-check-time-interval":"1m0s","auto-compaction-mode":"periodic","auto-compaction-retention":"0s","auto-compaction-interval":"0s","discovery-url
+[m":"","discovery-proxy":"","downgrade-check-interval":"5s"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.459573Z","caller":"etcdserver/backend.go:81","msg":"opened backend db","path":"etcd-1.etcd/member/snap/db","took":"2.005
+[m834ms"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463759Z","caller":"etcdserver/raft.go:495","msg":"starting local member","local-member-id":"b8c6addf901e4e46","cluster-i
+[md":"20ca32abe5b13af4"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463824Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 switched to configuration voters=(
+[m)"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463856Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 became follower at term 0"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463867Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"newRaft b8c6addf901e4e46 [peers: [], term: 0, commi
+[mt: 0, applied: 0, lastindex: 0, lastterm: 0]"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463873Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 became follower at term 1"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463899Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 switched to configuration voters=(
+[m9858694209087393831)"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463913Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 switched to configuration voters=(
+[m9858694209087393831 13314520524074667590)"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463925Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[33metcd-1-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.467001Z","caller":"auth/store.go:1241","msg":"simple token is not cryptographically signed"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.468521Z","caller":"mvcc/kvstore.go:407","msg":"kvstore restored","current-rev":1}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.469479Z","caller":"etcdserver/quota.go:94","msg":"enabled backend quota with default value","quota-name":"v3-applier","q
+[muota-size-bytes":2147483648,"quota-size":"2.1 GB"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.47055Z","caller":"rafthttp/peer.go:133","msg":"starting remote peer","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.470569Z","caller":"rafthttp/pipeline.go:72","msg":"started HTTP pipelining with remote peer","local-member-id":"b8c6addf
+[m901e4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.470885Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"b8c6addf901
+[me4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.470833Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"b8c6addf901
+[me4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.471096Z","caller":"rafthttp/peer.go:137","msg":"started remote peer","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.471126Z","caller":"rafthttp/transport.go:317","msg":"added remote peer","local-member-id":"b8c6addf901e4e46","remote-pee
+[mr-id":"88d11e2649dad027","remote-peer-urls":["http://etcd-2:2380"]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.47112Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream Ms
+[mgApp v2","local-member-id":"b8c6addf901e4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.471134Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[message","local-member-id":"b8c6addf901e4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.471144Z","caller":"rafthttp/peer.go:133","msg":"starting remote peer","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.47119Z","caller":"rafthttp/pipeline.go:72","msg":"started HTTP pipelining with remote peer","local-member-id":"b8c6addf9
+[m01e4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.471934Z","caller":"rafthttp/peer.go:137","msg":"started remote peer","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.471949Z","caller":"rafthttp/transport.go:317","msg":"added remote peer","local-member-id":"b8c6addf901e4e46","remote-pee
+[mr-id":"c3697a4fd7a20dcd","remote-peer-urls":["http://etcd-3:2380"]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.471965Z","caller":"etcdserver/server.go:867","msg":"starting etcd server","local-member-id":"b8c6addf901e4e46","local-se
+[mrver-version":"3.5.13","cluster-version":"to_be_decided"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472069Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"b8c6addf901
+[me4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472079Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"b8c6addf901
+[me4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472082Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[message","local-member-id":"b8c6addf901e4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472082Z","caller":"etcdserver/server.go:767","msg":"starting initial election tick advance","election-ticks":5}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472102Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[msgApp v2","local-member-id":"b8c6addf901e4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472053Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-1.etcd/member/snap","suffix":"snap.db
+[m","max":5,"interval":"30s"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472145Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-1.etcd/member/snap","suffix":"snap","
+[mmax":5,"interval":"30s"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472169Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-1.etcd/member/wal","suffix":"wal","ma
+[mx":5,"interval":"30s"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472651Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472692Z","caller":"embed/etcd.go:277","msg":"now serving peer/client/metrics","local-member-id":"b8c6addf901e4e46","init
+[mial-advertise-peer-urls":["http://etcd-1:2380"],"listen-peer-urls":["http://0.0.0.0:2380"],"advertise-client-urls":["http://etcd-1:2379"],"listen-client-urls":["http://0.0.0.
+[m0:2379"],"listen-metrics-urls":[]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472717Z","caller":"embed/etcd.go:597","msg":"serving peer traffic","address":"[::]:2380"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472712Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"b8
+[mc6addf901e4e46","added-peer-id":"88d11e2649dad027","added-peer-peer-urls":["http://etcd-2:2380"]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.47272Z","caller":"embed/etcd.go:569","msg":"cmux::serve","address":"[::]:2380"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472779Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472818Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"b8
+[mc6addf901e4e46","added-peer-id":"b8c6addf901e4e46","added-peer-peer-urls":["http://etcd-1:2380"]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.47284Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 switched to configuration voters=(9
+[m858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.472858Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"b8
+[mc6addf901e4e46","added-peer-id":"c3697a4fd7a20dcd","added-peer-peer-urls":["http://etcd-3:2380"]}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490283Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"b8c6addf901e4e46","to":"88d11e2649dad027"
+[m,"stream-type":"stream MsgApp v2"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490332Z","caller":"rafthttp/peer_status.go:53","msg":"peer became active","peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490348Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream MsgApp v2","local-member-id":"b8c6addf901e4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49047Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"b8c6addf901e4e46","to":"88d11e2649dad027",
+[m"stream-type":"stream Message"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490497Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream Message","local-member-id":"b8c6addf901e4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491944Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"b8c6addf901e4e46","to":"c3697a4fd7a20dcd"
+[m,"stream-type":"stream Message"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491965Z","caller":"rafthttp/peer_status.go:53","msg":"peer became active","peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491974Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream Message","local-member-id":"b8c6addf901e4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.4921Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"b8c6addf901e4e46","to":"c3697a4fd7a20dcd","
+[mstream-type":"stream MsgApp v2"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49211Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-t
+[mype":"stream MsgApp v2","local-member-id":"b8c6addf901e4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492246Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream MsgApp v2","local-member-id":"b8c6addf901e4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49226Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-t
+[mype":"stream Message","local-member-id":"b8c6addf901e4e46","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492444Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream Message","local-member-id":"b8c6addf901e4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492462Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream MsgApp v2","local-member-id":"b8c6addf901e4e46","remote-peer-id":"88d11e2649dad027"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.522725Z","caller":"etcdserver/server.go:790","msg":"initialized peer connections; fast-forwarding election ticks","local
+[m-member-id":"b8c6addf901e4e46","forward-ticks":3,"forward-duration":"750ms","election-ticks":5,"election-timeout":"1.25s","active-remote-members":2}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.980367Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 [logterm: 1, index: 3, vote: 0] ca
+[mst MsgPreVote for c3697a4fd7a20dcd [logterm: 1, index: 3] at term 1"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.981887Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 [term: 1] received a MsgVote messa
+[mge with higher term from c3697a4fd7a20dcd [term: 2]"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.981938Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 became follower at term 2"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.981961Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8c6addf901e4e46 [logterm: 1, index: 3, vote: 0] ca
+[mst MsgVote for c3697a4fd7a20dcd [logterm: 1, index: 3] at term 2"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.983268Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"raft.node: b8c6addf901e4e46 elected leader c3697a4f
+[md7a20dcd at term 2"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.98956Z","caller":"membership/cluster.go:584","msg":"set initial cluster version","cluster-id":"20ca32abe5b13af4","local-
+[mmember-id":"b8c6addf901e4e46","cluster-version":"3.5"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989583Z","caller":"api/capability.go:75","msg":"enabled capabilities for version","cluster-version":"3.5"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989594Z","caller":"etcdserver/server.go:2110","msg":"published local member to cluster through raft","local-member-id":"
+[mb8c6addf901e4e46","local-member-attributes":"{Name:etcd-1 ClientURLs:[http://etcd-1:2379]}","request-path":"/0/members/b8c6addf901e4e46/attributes","cluster-id":"20ca32abe5b1
+[m3af4","publish-timeout":"7.5s"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989615Z","caller":"embed/serve.go:103","msg":"ready to serve client requests"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989661Z","caller":"etcdmain/main.go:44","msg":"notifying init daemon"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989674Z","caller":"etcdmain/main.go:50","msg":"successfully notified init daemon"}
+[m[33metcd-1-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.990066Z","caller":"embed/serve.go:187","msg":"serving client traffic insecurely; this is strongly discouraged!","traffic
+[m":"grpc+http","address":"[::]:2379"}
+[m[32metcd-2-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.462011Z","caller":"embed/config.go:679","msg":"Running http and grpc server on single port. This is not recommended for 
+[mproduction."}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.462083Z","caller":"etcdmain/etcd.go:73","msg":"Running: ","args":["/usr/local/bin/etcd","--name=etcd-2","--initial-adver
+[mtise-peer-urls=http://etcd-2:2380","--listen-peer-urls=http://0.0.0.0:2380","--listen-client-urls=http://0.0.0.0:2379","--advertise-client-urls=http://etcd-2:2379","--heartbe
+[mat-interval=250","--election-timeout=1250","--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380","--initial-cluster-state=new","--
+[minitial-cluster-token=mys3cr3ttok3n"]}
+[m[32metcd-2-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.4621Z","caller":"etcdmain/etcd.go:105","msg":"'data-dir' was empty; using default","data-dir":"etcd-2.etcd"}
+[m[32metcd-2-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.462123Z","caller":"embed/config.go:679","msg":"Running http and grpc server on single port. This is not recommended for 
+[mproduction."}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.462137Z","caller":"embed/etcd.go:127","msg":"configuring peer listeners","listen-peer-urls":["http://0.0.0.0:2380"]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.462285Z","caller":"embed/etcd.go:135","msg":"configuring client listeners","listen-client-urls":["http://0.0.0.0:2379"]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.462336Z","caller":"embed/etcd.go:308","msg":"starting an etcd server","etcd-version":"3.5.13","git-sha":"c9063a0dc","go-
+[mversion":"go1.21.8","go-os":"linux","go-arch":"amd64","max-cpu-set":12,"max-cpu-available":12,"member-initialized":false,"name":"etcd-2","data-dir":"etcd-2.etcd","wal-dir":""
+[m,"wal-dir-dedicated":"","member-dir":"etcd-2.etcd/member","force-new-cluster":false,"heartbeat-interval":"250ms","election-timeout":"1.25s","initial-election-tick-advance":tr
+[mue,"snapshot-count":100000,"max-wals":5,"max-snapshots":5,"snapshot-catchup-entries":5000,"initial-advertise-peer-urls":["http://etcd-2:2380"],"listen-peer-urls":["http://0.0
+[m.0.0:2380"],"advertise-client-urls":["http://etcd-2:2379"],"listen-client-urls":["http://0.0.0.0:2379"],"listen-metrics-urls":[],"cors":["*"],"host-whitelist":["*"],"initial-
+[mcluster":"etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380","initial-cluster-state":"new","initial-cluster-token":"mys3cr3ttok3n","quota-backend-
+[mbytes":2147483648,"max-request-bytes":1572864,"max-concurrent-streams":4294967295,"pre-vote":true,"initial-corrupt-check":false,"corrupt-check-time-interval":"0s","compact-ch
+[meck-time-enabled":false,"compact-check-time-interval":"1m0s","auto-compaction-mode":"periodic","auto-compaction-retention":"0s","auto-compaction-interval":"0s","discovery-url
+[m":"","discovery-proxy":"","downgrade-check-interval":"5s"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.464686Z","caller":"etcdserver/backend.go:81","msg":"opened backend db","path":"etcd-2.etcd/member/snap/db","took":"1.931
+[m245ms"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476619Z","caller":"etcdserver/raft.go:495","msg":"starting local member","local-member-id":"88d11e2649dad027","cluster-i
+[md":"20ca32abe5b13af4"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476666Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 switched to configuration voters=(
+[m)"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476692Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 became follower at term 0"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476698Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"newRaft 88d11e2649dad027 [peers: [], term: 0, commi
+[mt: 0, applied: 0, lastindex: 0, lastterm: 0]"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476703Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 became follower at term 1"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476728Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 switched to configuration voters=(
+[m9858694209087393831)"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476735Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 switched to configuration voters=(
+[m9858694209087393831 13314520524074667590)"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.476743Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[32metcd-2-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.48339Z","caller":"auth/store.go:1241","msg":"simple token is not cryptographically signed"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.48609Z","caller":"mvcc/kvstore.go:407","msg":"kvstore restored","current-rev":1}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.487266Z","caller":"etcdserver/quota.go:94","msg":"enabled backend quota with default value","quota-name":"v3-applier","q
+[muota-size-bytes":2147483648,"quota-size":"2.1 GB"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.488436Z","caller":"rafthttp/peer.go:133","msg":"starting remote peer","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.488483Z","caller":"rafthttp/pipeline.go:72","msg":"started HTTP pipelining with remote peer","local-member-id":"88d11e26
+[m49dad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.488897Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"88d11e2649d
+[mad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.489009Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"88d11e2649d
+[mad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.489183Z","caller":"rafthttp/peer.go:137","msg":"started remote peer","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.489201Z","caller":"rafthttp/transport.go:317","msg":"added remote peer","local-member-id":"88d11e2649dad027","remote-pee
+[mr-id":"b8c6addf901e4e46","remote-peer-urls":["http://etcd-1:2380"]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.48922Z","caller":"rafthttp/peer.go:133","msg":"starting remote peer","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.489237Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[message","local-member-id":"88d11e2649dad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.48925Z","caller":"rafthttp/pipeline.go:72","msg":"started HTTP pipelining with remote peer","local-member-id":"88d11e264
+[m9dad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.489253Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[msgApp v2","local-member-id":"88d11e2649dad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490236Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"88d11e2649d
+[mad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490299Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"88d11e2649d
+[mad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[36metcd-3-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.46363Z","caller":"embed/config.go:679","msg":"Running http and grpc server on single port. This is not recommended for p
+[mroduction."}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463661Z","caller":"etcdmain/etcd.go:73","msg":"Running: ","args":["/usr/local/bin/etcd","--name=etcd-3","--initial-adver
+[mtise-peer-urls=http://etcd-3:2380","--listen-peer-urls=http://0.0.0.0:2380","--listen-client-urls=http://0.0.0.0:2379","--advertise-client-urls=http://etcd-3:2379","--heartbe
+[mat-interval=250","--election-timeout=1250","--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380","--initial-cluster-state=new","--
+[minitial-cluster-token=mys3cr3ttok3n"]}
+[m[36metcd-3-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.463669Z","caller":"etcdmain/etcd.go:105","msg":"'data-dir' was empty; using default","data-dir":"etcd-3.etcd"}
+[m[36metcd-3-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.46368Z","caller":"embed/config.go:679","msg":"Running http and grpc server on single port. This is not recommended for p
+[mroduction."}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463683Z","caller":"embed/etcd.go:127","msg":"configuring peer listeners","listen-peer-urls":["http://0.0.0.0:2380"]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463839Z","caller":"embed/etcd.go:135","msg":"configuring client listeners","listen-client-urls":["http://0.0.0.0:2379"]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.463914Z","caller":"embed/etcd.go:308","msg":"starting an etcd server","etcd-version":"3.5.13","git-sha":"c9063a0dc","go-
+[mversion":"go1.21.8","go-os":"linux","go-arch":"amd64","max-cpu-set":12,"max-cpu-available":12,"member-initialized":false,"name":"etcd-3","data-dir":"etcd-3.etcd","wal-dir":""
+[m,"wal-dir-dedicated":"","member-dir":"etcd-3.etcd/member","force-new-cluster":false,"heartbeat-interval":"250ms","election-timeout":"1.25s","initial-election-tick-advance":tr
+[mue,"snapshot-count":100000,"max-wals":5,"max-snapshots":5,"snapshot-catchup-entries":5000,"initial-advertise-peer-urls":["http://etcd-3:2380"],"listen-peer-urls":["http://0.0
+[m.0.0:2380"],"advertise-client-urls":["http://etcd-3:2379"],"listen-client-urls":["http://0.0.0.0:2379"],"listen-metrics-urls":[],"cors":["*"],"host-whitelist":["*"],"initial-
+[mcluster":"etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380","initial-cluster-state":"new","initial-cluster-token":"mys3cr3ttok3n","quota-backend-
+[mbytes":2147483648,"max-request-bytes":1572864,"max-concurrent-streams":4294967295,"pre-vote":true,"initial-corrupt-check":false,"corrupt-check-time-interval":"0s","compact-ch
+[meck-time-enabled":false,"compact-check-time-interval":"1m0s","auto-compaction-mode":"periodic","auto-compaction-retention":"0s","auto-compaction-interval":"0s","discovery-url
+[m":"","discovery-proxy":"","downgrade-check-interval":"5s"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49032Z","caller":"rafthttp/peer.go:137","msg":"started remote peer","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490336Z","caller":"rafthttp/transport.go:317","msg":"added remote peer","local-member-id":"88d11e2649dad027","remote-pee
+[mr-id":"c3697a4fd7a20dcd","remote-peer-urls":["http://etcd-3:2380"]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490353Z","caller":"etcdserver/server.go:867","msg":"starting etcd server","local-member-id":"88d11e2649dad027","local-se
+[mrver-version":"3.5.13","cluster-version":"to_be_decided"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490366Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[message","local-member-id":"88d11e2649dad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490332Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[msgApp v2","local-member-id":"88d11e2649dad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.465587Z","caller":"etcdserver/backend.go:81","msg":"opened backend db","path":"etcd-3.etcd/member/snap/db","took":"1.281
+[m117ms"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.479206Z","caller":"etcdserver/raft.go:495","msg":"starting local member","local-member-id":"c3697a4fd7a20dcd","cluster-i
+[md":"20ca32abe5b13af4"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.479282Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd switched to configuration voters=(
+[m)"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.47931Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd became follower at term 0"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.479317Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"newRaft c3697a4fd7a20dcd [peers: [], term: 0, commi
+[mt: 0, applied: 0, lastindex: 0, lastterm: 0]"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.479322Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd became follower at term 1"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.479347Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd switched to configuration voters=(
+[m9858694209087393831)"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.479355Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd switched to configuration voters=(
+[m9858694209087393831 13314520524074667590)"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.479362Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[36metcd-3-1  | [39m{"level":"warn","ts":"2024-05-22T23:54:47.484452Z","caller":"auth/store.go:1241","msg":"simple token is not cryptographically signed"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.486964Z","caller":"mvcc/kvstore.go:407","msg":"kvstore restored","current-rev":1}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.48881Z","caller":"etcdserver/quota.go:94","msg":"enabled backend quota with default value","quota-name":"v3-applier","qu
+[mota-size-bytes":2147483648,"quota-size":"2.1 GB"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.489705Z","caller":"rafthttp/peer.go:133","msg":"starting remote peer","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.489736Z","caller":"rafthttp/pipeline.go:72","msg":"started HTTP pipelining with remote peer","local-member-id":"c3697a4f
+[md7a20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490328Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"c3697a4fd7a
+[m20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490373Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"c3697a4fd7a
+[m20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49047Z","caller":"rafthttp/peer.go:137","msg":"started remote peer","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490485Z","caller":"rafthttp/transport.go:317","msg":"added remote peer","local-member-id":"c3697a4fd7a20dcd","remote-pee
+[mr-id":"88d11e2649dad027","remote-peer-urls":["http://etcd-2:2380"]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490481Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[msgApp v2","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490498Z","caller":"rafthttp/peer.go:133","msg":"starting remote peer","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490515Z","caller":"rafthttp/pipeline.go:72","msg":"started HTTP pipelining with remote peer","local-member-id":"c3697a4f
+[md7a20dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490779Z","caller":"rafthttp/peer.go:137","msg":"started remote peer","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490789Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[message","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.4908Z","caller":"rafthttp/transport.go:317","msg":"added remote peer","local-member-id":"c3697a4fd7a20dcd","remote-peer-
+[mid":"b8c6addf901e4e46","remote-peer-urls":["http://etcd-1:2380"]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490814Z","caller":"etcdserver/server.go:867","msg":"starting etcd server","local-member-id":"c3697a4fd7a20dcd","local-se
+[mrver-version":"3.5.13","cluster-version":"to_be_decided"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49085Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"c3697a4fd7a2
+[m0dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49086Z","caller":"rafthttp/stream.go:169","msg":"started stream writer with remote peer","local-member-id":"c3697a4fd7a2
+[m0dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490874Z","caller":"etcdserver/server.go:767","msg":"starting initial election tick advance","election-ticks":5}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490914Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[msgApp v2","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490952Z","caller":"rafthttp/stream.go:395","msg":"started stream reader with remote peer","stream-reader-type":"stream M
+[message","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49089Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-3.etcd/member/snap","suffix":"snap.db"
+[m,"max":5,"interval":"30s"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490982Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-3.etcd/member/snap","suffix":"snap","
+[mmax":5,"interval":"30s"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490991Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-3.etcd/member/wal","suffix":"wal","ma
+[mx":5,"interval":"30s"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491622Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491693Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"c3
+[m697a4fd7a20dcd","added-peer-id":"88d11e2649dad027","added-peer-peer-urls":["http://etcd-2:2380"]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491734Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491776Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"c3
+[m697a4fd7a20dcd","added-peer-id":"b8c6addf901e4e46","added-peer-peer-urls":["http://etcd-1:2380"]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491812Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491834Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"c3
+[m697a4fd7a20dcd","added-peer-id":"c3697a4fd7a20dcd","added-peer-peer-urls":["http://etcd-3:2380"]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491955Z","caller":"rafthttp/peer_status.go:53","msg":"peer became active","peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491982Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream Message","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492001Z","caller":"embed/etcd.go:597","msg":"serving peer traffic","address":"[::]:2380"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492009Z","caller":"embed/etcd.go:569","msg":"cmux::serve","address":"[::]:2380"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492004Z","caller":"embed/etcd.go:277","msg":"now serving peer/client/metrics","local-member-id":"c3697a4fd7a20dcd","init
+[mial-advertise-peer-urls":["http://etcd-3:2380"],"listen-peer-urls":["http://0.0.0.0:2380"],"advertise-client-urls":["http://etcd-3:2379"],"listen-client-urls":["http://0.0.0.
+[m0:2379"],"listen-metrics-urls":[]}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492084Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream MsgApp v2","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492151Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"c3697a4fd7a20dcd","to":"88d11e2649dad027"
+[m,"stream-type":"stream Message"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492157Z","caller":"rafthttp/peer_status.go:53","msg":"peer became active","peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492161Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream Message","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492202Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"c3697a4fd7a20dcd","to":"b8c6addf901e4e46"
+[m,"stream-type":"stream Message"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492214Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream Message","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492235Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"c3697a4fd7a20dcd","to":"b8c6addf901e4e46"
+[m,"stream-type":"stream MsgApp v2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492247Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream MsgApp v2","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"b8c6addf901e4e46"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492264Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"c3697a4fd7a20dcd","to":"88d11e2649dad027"
+[m,"stream-type":"stream MsgApp v2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492276Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream MsgApp v2","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492413Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream MsgApp v2","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49245Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-t
+[mype":"stream Message","local-member-id":"c3697a4fd7a20dcd","remote-peer-id":"88d11e2649dad027"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.541052Z","caller":"etcdserver/server.go:790","msg":"initialized peer connections; fast-forwarding election ticks","local
+[m-member-id":"c3697a4fd7a20dcd","forward-ticks":3,"forward-duration":"750ms","election-ticks":5,"election-timeout":"1.25s","active-remote-members":2}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.979591Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd is starting a new election at term
+[m 1"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.979669Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd became pre-candidate at term 1"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.979739Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd received MsgPreVoteResp from c3697
+[ma4fd7a20dcd at term 1"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.979779Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd [logterm: 1, index: 3] sent MsgPre
+[mVote request to 88d11e2649dad027 at term 1"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.979799Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd [logterm: 1, index: 3] sent MsgPre
+[mVote request to b8c6addf901e4e46 at term 1"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.980532Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd received MsgPreVoteResp from 88d11
+[me2649dad027 at term 1"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.980586Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd has received 2 MsgPreVoteResp vote
+[ms and 0 vote rejections"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.980617Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd became candidate at term 2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.980635Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd received MsgVoteResp from c3697a4f
+[md7a20dcd at term 2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.98066Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd [logterm: 1, index: 3] sent MsgVote
+[m request to 88d11e2649dad027 at term 2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.980682Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd [logterm: 1, index: 3] sent MsgVot
+[me request to b8c6addf901e4e46 at term 2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.982906Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd received MsgVoteResp from b8c6addf
+[m901e4e46 at term 2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.982948Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd has received 2 MsgVoteResp votes a
+[mnd 0 vote rejections"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.982975Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"c3697a4fd7a20dcd became leader at term 2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.983006Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"raft.node: c3697a4fd7a20dcd elected leader c3697a4f
+[md7a20dcd at term 2"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.987884Z","caller":"embed/serve.go:103","msg":"ready to serve client requests"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.987902Z","caller":"etcdserver/server.go:2110","msg":"published local member to cluster through raft","local-member-id":"
+[mc3697a4fd7a20dcd","local-member-attributes":"{Name:etcd-3 ClientURLs:[http://etcd-3:2379]}","request-path":"/0/members/c3697a4fd7a20dcd/attributes","cluster-id":"20ca32abe5b1
+[m3af4","publish-timeout":"7.5s"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.988144Z","caller":"etcdmain/main.go:44","msg":"notifying init daemon"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.988183Z","caller":"etcdmain/main.go:50","msg":"successfully notified init daemon"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.988368Z","caller":"etcdserver/server.go:2620","msg":"setting up initial cluster version using v2 API","cluster-version":
+[m"3.5"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.988807Z","caller":"embed/serve.go:187","msg":"serving client traffic insecurely; this is strongly discouraged!","traffic
+[m":"grpc+http","address":"[::]:2379"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989137Z","caller":"membership/cluster.go:584","msg":"set initial cluster version","cluster-id":"20ca32abe5b13af4","local
+[m-member-id":"c3697a4fd7a20dcd","cluster-version":"3.5"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989175Z","caller":"api/capability.go:75","msg":"enabled capabilities for version","cluster-version":"3.5"}
+[m[36metcd-3-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989185Z","caller":"etcdserver/server.go:2644","msg":"cluster version is updated","cluster-version":"3.5"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490433Z","caller":"rafthttp/peer_status.go:53","msg":"peer became active","peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490541Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream MsgApp v2","local-member-id":"88d11e2649dad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490744Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream Message","local-member-id":"88d11e2649dad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49078Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-2.etcd/member/snap","suffix":"snap.db"
+[m,"max":5,"interval":"30s"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490808Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-2.etcd/member/snap","suffix":"snap","
+[mmax":5,"interval":"30s"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.490816Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"etcd-2.etcd/member/wal","suffix":"wal","ma
+[mx":5,"interval":"30s"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49083Z","caller":"etcdserver/server.go:767","msg":"starting initial election tick advance","election-ticks":5}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49123Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 switched to configuration voters=(9
+[m858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491338Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"88
+[md11e2649dad027","added-peer-id":"88d11e2649dad027","added-peer-peer-urls":["http://etcd-2:2380"]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.49152Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 switched to configuration voters=(9
+[m858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491568Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"88
+[md11e2649dad027","added-peer-id":"b8c6addf901e4e46","added-peer-peer-urls":["http://etcd-1:2380"]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491613Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 switched to configuration voters=(
+[m9858694209087393831 13314520524074667590 14080920193289293261)"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.491635Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"20ca32abe5b13af4","local-member-id":"88
+[md11e2649dad027","added-peer-id":"c3697a4fd7a20dcd","added-peer-peer-urls":["http://etcd-3:2380"]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492167Z","caller":"rafthttp/peer_status.go:53","msg":"peer became active","peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492178Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream Message","local-member-id":"88d11e2649dad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492271Z","caller":"embed/etcd.go:597","msg":"serving peer traffic","address":"[::]:2380"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492284Z","caller":"embed/etcd.go:569","msg":"cmux::serve","address":"[::]:2380"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492272Z","caller":"embed/etcd.go:277","msg":"now serving peer/client/metrics","local-member-id":"88d11e2649dad027","init
+[mial-advertise-peer-urls":["http://etcd-2:2380"],"listen-peer-urls":["http://0.0.0.0:2380"],"advertise-client-urls":["http://etcd-2:2379"],"listen-client-urls":["http://0.0.0.
+[m0:2379"],"listen-metrics-urls":[]}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492239Z","caller":"rafthttp/stream.go:412","msg":"established TCP streaming connection with remote peer","stream-reader-
+[mtype":"stream MsgApp v2","local-member-id":"88d11e2649dad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492414Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"88d11e2649dad027","to":"b8c6addf901e4e46"
+[m,"stream-type":"stream Message"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492431Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"88d11e2649dad027","to":"c3697a4fd7a20dcd"
+[m,"stream-type":"stream MsgApp v2"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492429Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream Message","local-member-id":"88d11e2649dad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492437Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream MsgApp v2","local-member-id":"88d11e2649dad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492457Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"88d11e2649dad027","to":"b8c6addf901e4e46"
+[m,"stream-type":"stream MsgApp v2"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492467Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream MsgApp v2","local-member-id":"88d11e2649dad027","remote-peer-id":"b8c6addf901e4e46"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492485Z","caller":"rafthttp/stream.go:249","msg":"set message encoder","from":"88d11e2649dad027","to":"c3697a4fd7a20dcd"
+[m,"stream-type":"stream Message"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.492494Z","caller":"rafthttp/stream.go:274","msg":"established TCP streaming connection with remote peer","stream-writer-
+[mtype":"stream Message","local-member-id":"88d11e2649dad027","remote-peer-id":"c3697a4fd7a20dcd"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.541029Z","caller":"etcdserver/server.go:790","msg":"initialized peer connections; fast-forwarding election ticks","local
+[m-member-id":"88d11e2649dad027","forward-ticks":3,"forward-duration":"750ms","election-ticks":5,"election-timeout":"1.25s","active-remote-members":2}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.980229Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 [logterm: 1, index: 3, vote: 0] ca
+[mst MsgPreVote for c3697a4fd7a20dcd [logterm: 1, index: 3] at term 1"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.982003Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 [term: 1] received a MsgVote messa
+[mge with higher term from c3697a4fd7a20dcd [term: 2]"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.982068Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 became follower at term 2"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.982137Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"88d11e2649dad027 [logterm: 1, index: 3, vote: 0] ca
+[mst MsgVote for c3697a4fd7a20dcd [logterm: 1, index: 3] at term 2"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.983247Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"raft.node: 88d11e2649dad027 elected leader c3697a4f
+[md7a20dcd at term 2"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.987981Z","caller":"etcdserver/server.go:2110","msg":"published local member to cluster through raft","local-member-id":"
+[m88d11e2649dad027","local-member-attributes":"{Name:etcd-2 ClientURLs:[http://etcd-2:2379]}","request-path":"/0/members/88d11e2649dad027/attributes","cluster-id":"20ca32abe5b1
+[m3af4","publish-timeout":"7.5s"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.988045Z","caller":"embed/serve.go:103","msg":"ready to serve client requests"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.98821Z","caller":"etcdmain/main.go:44","msg":"notifying init daemon"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.988224Z","caller":"etcdmain/main.go:50","msg":"successfully notified init daemon"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.988791Z","caller":"embed/serve.go:187","msg":"serving client traffic insecurely; this is strongly discouraged!","traffic
+[m":"grpc+http","address":"[::]:2379"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.989189Z","caller":"membership/cluster.go:584","msg":"set initial cluster version","cluster-id":"20ca32abe5b13af4","local
+[m-member-id":"88d11e2649dad027","cluster-version":"3.5"}
+[m[32metcd-2-1  | [39m{"level":"info","ts":"2024-05-22T23:54:47.98923Z","caller":"api/capability.go:75","msg":"enabled capabilities for version","cluster-version":"3.5"}
+[m       
+
+[m  
+
